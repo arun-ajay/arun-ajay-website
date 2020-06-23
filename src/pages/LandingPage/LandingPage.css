@@ -1,0 +1,83 @@
+/* GRID CSS*/
+.landingPageGrid{
+    overflow: auto;
+    height: 100%;
+
+}
+
+.ui.grid{
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+
+/**/
+
+/*Main page content*/
+.landingPageMainRow{
+    height: 90%;
+    width: 100%;
+    padding-top: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.row{
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.landingPageCard{
+    min-width: 425px;
+}
+
+/**/
+
+.ui.header.nameHeader{
+    font-size: 5rem;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1;
+    text-align: center;
+    text-shadow: 3px 5px black;
+}
+
+.ui.header.titleHeader{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1;
+    text-align: center;
+    text-shadow: 2px 4px black;
+}
+
+.ui.button.socialButton{
+    opacity: .7;
+    transition: all .25s ease-in-out;
+    margin-top: 15px;
+    margin-right: 20px;
+    box-shadow: 3px 4px black;
+}
+
+.ui.button.socialButton:hover{
+    opacity: 1;
+
+}
+
+
+
+.ui.container.imageContainer{
+    border-radius: 50%;
+
+}
+
+.profile{
+    width: 200px !important;
+    height: auto !important;
+    box-shadow: 3px 4px black;
+
+}

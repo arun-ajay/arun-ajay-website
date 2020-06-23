@@ -1,0 +1,39 @@
+/* GRID CSS*/
+.projectsPageGrid{
+    overflow: auto;
+    height: 100%;
+}
+
+.ui.grid{
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+
+/**/
+
+/*Main page content*/
+.projectsPageMainRow{
+    height: 90%;
+    width: 100%;
+    padding-top: 5px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.projectCardIcon{
+
+    margin-right: 15px;
+  }
+
+.row{
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.ui.card.projectCard{
+    box-shadow: 1px 3px black !important;
+}
+
+
+/**/
