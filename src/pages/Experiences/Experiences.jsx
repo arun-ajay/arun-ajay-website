@@ -49,14 +49,14 @@ export default class Experiences extends Component{
                     </Card.Content>
                 </Card>
             </Transition>
-        })
+    })
 
 
 
         return(
             <Grid padded = {"vertically"} className = "experiencesPageGrid">
                 <SiteHeader></SiteHeader>
-                <Grid.Row className = "projectsPageMainRow">
+                <Grid.Row className = "experiencesPageMainRow">
                     <Grid.Column only = {"computer"} width = {6}/>
                     <Grid.Column only = {"computer"} width = {4}>
                         <Card.Group stackable itemsPerRow = {1}>
@@ -73,8 +73,7 @@ export default class Experiences extends Component{
                     </Grid.Column>
 
 
-                    <Grid.Column only = {"mobile"} width = {2}/>
-                    <Grid.Column only = {"mobile"} width = {12}>
+                    <Grid.Column only = {"mobile"} width = {16}>
                         <Card.Group stackable itemsPerRow = {1}>
                             {cardArray}
                         </Card.Group>
