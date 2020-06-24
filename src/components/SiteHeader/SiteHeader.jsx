@@ -51,7 +51,7 @@ export default class SiteHeader extends Component {
                 </Menu.Item>
         })        
     return(
-        <Grid.Row columns = {3} className = "siteHeader">
+        <Grid.Row className = "siteHeader">
             <Grid.Column computer = {4} only = {"computer"}/>
             <Grid.Column textAlign = {"center"} verticalAlign = {"middle"} computer  = {8} tablet = {16} mobile = {16}>
                 <Menu borderless compact inverted>
