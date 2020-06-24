@@ -54,7 +54,7 @@ export default class Projects extends Component{
 
 
         return(
-            <Grid stackable padded = {"vertically"} className = "projectsPageGrid">
+            <Grid padded = {"vertically"} className = "projectsPageGrid">
                 <SiteHeader></SiteHeader>
                 <Grid.Row className = "projectsPageMainRow">
                     <Grid.Column only = {"computer"} width = {4}>

@@ -62,7 +62,7 @@ export default class LandingPage extends Component {
 
         
         return(
-            <Grid stackable padded = {"vertically"} className = "landingPageGrid">
+            <Grid padded = {"vertically"} className = "landingPageGrid">
                 <SiteHeader></SiteHeader>
                 <Grid.Row className = "landingPageMainRow">
                     <Grid.Column textAlign = {"center"} verticalAlign = {"top"} width = {16} style = {{"margin-top":"25px"}}>
