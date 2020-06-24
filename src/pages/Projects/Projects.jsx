@@ -28,7 +28,7 @@ export default class Projects extends Component{
                 duration = {500+(index)*100}
                 visible = {this.state.open}
             >
-                <Card className = "projectCard" link color = {"blue"} onClick = {() => {window.open(data.projectURL,"_blank")}}>
+                <Card className = "projectCard" onClick = {() => {window.open(data.projectURL,"_blank")}}>
                     <Card.Content textAlign = {"center"}>
                         <Card.Header>
                             {data.projectTitle}
@@ -65,10 +65,9 @@ export default class Projects extends Component{
                         </Card.Group>
                     </Grid.Column>
                     <Grid.Column only = {"tablet mobile"} width = {16}>
-                        <Card.Group stackable itemsPerRow = {3}>
+                        <Card.Group stackable itemsPerRow = {2}>
                             {cardArray}
                         </Card.Group>
-
                     </Grid.Column>
                 </Grid.Row>
                 <Footer></Footer>

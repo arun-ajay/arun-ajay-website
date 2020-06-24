@@ -25,7 +25,7 @@ export default class Experiences extends Component{
         var cardArray = experiencesData.map((data,index) => {
            return  <Transition
                 animation = "drop"
-                duration = {500*(index+1)}
+                duration = {300*(index+1)}
                 visible = {this.state.open}
             >
                 <Card color = {"blue"} className = "experienceCard" >
@@ -54,21 +54,30 @@ export default class Experiences extends Component{
 
 
         return(
-            <Grid stackable padded = {"vertically"} className = "experiencesPageGrid">
+            <Grid padded = {"vertically"} className = "experiencesPageGrid">
                 <SiteHeader></SiteHeader>
                 <Grid.Row className = "projectsPageMainRow">
+                    <Grid.Column only = {"computer"} width = {6}/>
                     <Grid.Column only = {"computer"} width = {4}>
-                    </Grid.Column>
-                    <Grid.Column only = {"computer"} width = {8}>
-                        <Card.Group stackable itemsPerRow = {3}>
+                        <Card.Group stackable itemsPerRow = {1}>
                             {cardArray}
                         </Card.Group>
                     </Grid.Column>
-                    <Grid.Column only = {"tablet mobile"} width = {16}>
-                        <Card.Group stackable itemsPerRow = {3}>
-                            {cardArray}
-                        </Card.Group>
 
+                    <Grid.Column only = {"tablet"} width = {4}>
+                    </Grid.Column>
+                    <Grid.Column only = {"tablet"} width = {8}>
+                        <Card.Group stackable itemsPerRow = {1}>
+                            {cardArray}
+                        </Card.Group>
+                    </Grid.Column>
+
+
+                    <Grid.Column only = {"mobile"} width = {2}/>
+                    <Grid.Column only = {"mobile"} width = {12}>
+                        <Card.Group stackable itemsPerRow = {1}>
+                            {cardArray}
+                        </Card.Group>
                     </Grid.Column>
                 </Grid.Row>
                 <Footer></Footer>

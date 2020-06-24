@@ -25,6 +25,7 @@ export default class LandingPage extends Component {
     render(){    
         var icons = [
             {
+                
                 icon: <Icon size = {"huge"} name = "stack overflow" style = {{"color":"#F48024"}}/>,
                 background: "white",
                 url: "https://stackoverflow.com/users/9028381/arun-ajay"
@@ -67,41 +68,41 @@ export default class LandingPage extends Component {
                     <Grid.Column textAlign = {"center"} verticalAlign = {"top"} width = {16} style = {{"margin-top":"25px"}}>
                     <Transition
                             animation = "fade down"
-                            duration = {1000}
+                            duration = {500}
                             visible = {this.state.open}
-                        >
- 
+                    >
                                 <Image className = "profile" centered size = {"medium"} src = {require('./assets/me.jpg')} style = {{"border-radius":"50%"}}/>
-    
+                    </Transition>
 
-                        </Transition>
-                        <Transition
-                            animation = "fade down"
-                            duration = {1000}
-                            visible = {this.state.open}
-                        >
-                            <Header className = "nameHeader">
-                                Arun Ajay
-                            </Header>
-                        </Transition>
-                        <Transition
-                            animation = "fade down"
-                            duration = {1500}
-                            visible = {this.state.open}
-                        >  
-                            <Header as = 'h3' className = "titleHeader">
-                                Engineer and Aspiring Software Developer
-                            </Header>
-                        </Transition>
-                        <Transition
-                            animation = "zoom"
-                            duration = {1000}
-                            visible = {this.state.open}
-                        >  
-                            <Container>
-                                {iconsArray}
-                            </Container>
-                        </Transition>
+                    <Transition
+                        animation = "fade down"
+                        duration = {500}
+                        visible = {this.state.open}
+                    >
+                        <Header className = "nameHeader">
+                            Arun Ajay
+                        </Header>
+                    </Transition>
+
+                    <Transition
+                        animation = "fade down"
+                        duration = {700}
+                        visible = {this.state.open}
+                    >  
+                        <Header as = 'h3' className = "titleHeader">
+                            Aspiring Software Engineer
+                        </Header>
+                    </Transition>
+                    
+                    <Transition
+                        animation = "zoom"
+                        duration = {500}
+                        visible = {this.state.open}
+                    >  
+                        <Container>
+                            {iconsArray}
+                        </Container>
+                    </Transition>
 
                     </Grid.Column>
                 </Grid.Row>
