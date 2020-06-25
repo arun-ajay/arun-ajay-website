@@ -16,9 +16,9 @@
 .experiencesPageMainRow{
     height: 90%;
     width: 100%;
-    margin-top: 10px;
     overflow: hidden;
     overflow-y: auto;
+    top: 10px;
 }
 
 .experienceCardImage{

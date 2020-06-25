@@ -1,5 +1,7 @@
+import React from 'react';
 import {faPython,faHtml5,faCss3,faJs,faAngular, faReact, faAws} from '@fortawesome/free-brands-svg-icons'
-import {faDatabase} from '@fortawesome/free-solid-svg-icons'
+import {faDatabase,faMapMarkerAlt,faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 var colors = {
     "python": "#306998",
     "html" :  "#F16529",
@@ -17,8 +19,8 @@ export const experiencesData = [
         "company" : "Bank of America",
         "image": "BOFA.png",
         "title" : "Global Technology Summer Analyst Intern",
-        "location": "Manhattan,NY",
-        "term" : "Summer 2020",
+        "location": <span><FontAwesomeIcon icon = {faMapMarkerAlt}/> Manhattan,NY</span>,
+        "term" : <span> <FontAwesomeIcon icon = {faCalendarAlt}/> Summer 2020 </span>,
         "fontColor" : "#0061aa",
         "technologies":[]
     },
@@ -26,8 +28,8 @@ export const experiencesData = [
         "company" : "The New York Public Library",
         "title" : "Systems Engineering Intern",
         "image": "NYPL.jpg",
-        "location": "Manhattan,NY",
-        "term" : "October 2019 - May 2020",
+        "location": <span><FontAwesomeIcon icon = {faMapMarkerAlt}/> Manhattan,NY</span>,
+        "term" :<span> <FontAwesomeIcon icon = {faCalendarAlt}/> October 2019 - May 2020 </span>,
         "fontColor" : "black",
         "technologies":[
             {
@@ -65,8 +67,8 @@ export const experiencesData = [
         "company" : "Bank of America - Merill Lynch",
         "image": "BOFAML.jpg",
         "title" : "Global Technology Summer Analyst Intern",
-        "location": "Manhattan,NY",
-        "term" : "Summer 2019",
+        "location": <span><FontAwesomeIcon icon = {faMapMarkerAlt}/> Manhattan,NY</span>,
+        "term" : <span> <FontAwesomeIcon icon = {faCalendarAlt}/> Summer 2019 </span>,
         "fontColor" : "#0061aa",
         "technologies":[
             {

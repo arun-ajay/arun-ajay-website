@@ -64,6 +64,7 @@ export default class Experiences extends Component{
                         </Card.Group>
                     </Grid.Column>
 
+
                     <Grid.Column only = {"tablet"} width = {4}>
                     </Grid.Column>
                     <Grid.Column only = {"tablet"} width = {8}>

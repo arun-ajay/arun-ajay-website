@@ -32,7 +32,7 @@ export default class Footer extends Component {
             <Grid.Column only = {"tablet mobile"} width = {16} textAlign = {"center"} verticalAlign = {"middle"}>
                 <Button color = {"black"} compact circular onClick = {this.handleFooterLabelClick}>
                     <Button.Content>
-                    <Icon name = "hand point right outline"/>Like the site? Click to see the source code! <Icon name = "hand point left outline"/>
+                    <Icon name = "hand point right outline"/>Click to see the source code! <Icon name = "hand point left outline"/>
                     </Button.Content>
                 </Button>
             </Grid.Column>
