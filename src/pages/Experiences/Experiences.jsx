@@ -16,42 +16,26 @@ export default class Experiences extends Component{
     }
 
     componentDidMount(){
-        console.log("DID")
         this.setState({
             open: true,
             cardContents: []
             }
         )
-
-//         <Transition
-//                 animation = "drop"
-//                 duration = {300*(index+1)}
-//                 visible = {this.state.open}
-//             >
-
-// </Transition>
     }
 
 
     showCardContent = (index) => {
         
-        console.log("array",this.state.cardContents,"index",index)
         var cardContentsCopy = this.state.cardContents.slice()
         cardContentsCopy[index] = !cardContentsCopy[index]
         this.setState({
             cardContents: cardContentsCopy
-        },() => {
-            console.log("array",this.state.cardContents,"index",index)
         })
 
 
     }
 
     render () {  
-        console.log("render")  
-        var nonetest = null
-        console.log("test",nonetest)
-        console.log("test",!nonetest)
         var cardArray = experiencesData.map((data,index) => {
             return <Transition
             animation = "drop"
@@ -108,7 +92,6 @@ export default class Experiences extends Component{
                             {cardArray}
                         </Card.Group>
                     </Grid.Column>
-
 
                     <Grid.Column only = {"mobile"} width = {16}>
                         <Card.Group stackable itemsPerRow = {1}>

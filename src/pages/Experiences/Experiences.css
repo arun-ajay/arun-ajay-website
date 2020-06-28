@@ -43,8 +43,11 @@
     margin-top: 0rem;
 }
 
-.ui.cards.card.content{
-    
+.ui.card > .content, .ui.cards > .card > .content{
+    border-top: 0px;
 }
 
+.ui.card > .extra, .ui.cards > .card > .extra{
+    border-top: 0px !important;
+}
 /**/
