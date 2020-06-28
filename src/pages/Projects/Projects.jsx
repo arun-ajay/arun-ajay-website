@@ -57,9 +57,9 @@ export default class Projects extends Component{
             <Grid padded = {"vertically"} className = "projectsPageGrid">
                 <SiteHeader></SiteHeader>
                 <Grid.Row className = "projectsPageMainRow">
-                    <Grid.Column only = {"computer"} width = {4}>
+                    <Grid.Column only = {"computer"} width = {2}>
                     </Grid.Column>
-                    <Grid.Column only = {"computer"} width = {8}>
+                    <Grid.Column only = {"computer"} width = {12}>
                         <Card.Group stackable itemsPerRow = {3}>
                             {cardArray}
                         </Card.Group>
