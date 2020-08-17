@@ -17,14 +17,49 @@ var colors = {
 
 export const experiencesData = [
     {
+        "company" : "The New York Public Library",
+        "title" : "Systems Engineering Intern",
+        "image": "NYPL.jpg",
+        "location": <span><FontAwesomeIcon icon = {faMapMarkerAlt}/> Manhattan,NY</span>,
+        "term" :<span> <FontAwesomeIcon icon = {faCalendarAlt}/> August 2020 - Present </span>,
+        "fontColor" : "black",
+        "technologies":[],
+        "description": <p>Coming soon!</p>
+    },
+    {
         "company" : "Bank of America",
         "image": "BOFA.png",
         "title" : "Global Technology Summer Analyst Intern",
         "location": <span><FontAwesomeIcon icon = {faMapMarkerAlt}/> Manhattan,NY</span>,
         "term" : <span> <FontAwesomeIcon icon = {faCalendarAlt}/> Summer 2020 </span>,
         "fontColor" : "#0061aa",
-        "technologies":[],
-        "description": "Coming soon!"
+        "technologies":[
+            {
+                "icon":faPython,
+                "color":colors.python
+            },
+            {
+                "icon":faDatabase,
+                "color":colors.sql
+            }
+        ],
+        "description":  
+            <List >
+                <List.Item>
+                    <List.Icon name = 'code branch'/>
+                    <List.Content>
+                        <List.Header style = {{"color" : "#0061aa"}}>Sentiment and Tag Analyzer</List.Header>
+                        <List.Description>
+                            <Icon name = "python" style = {{"color":colors.python}}></Icon>
+                            <Icon name = "database" style = {{"color":colors.sql}}></Icon>
+                            <p style = {{"color" : "#0061aa"}}>
+                            Scraped over financial and regulatory documents to build an NLP language model (corpus) to clean and process documents into the proper format based on exploratory data analysis. 
+                            Trained models that generated a weighted sentiment score for tags based on a category using Python, Spacy, Gensim, and TextBlob
+                            </p>
+                        </List.Description>
+                    </List.Content>
+                </List.Item>
+            </List>
     },
     {
         "company" : "The New York Public Library",
