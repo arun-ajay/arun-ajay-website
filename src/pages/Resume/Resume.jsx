@@ -18,12 +18,12 @@ function Resume() {
                 <Grid.Column only = {"computer"} width = {3}/>
                 
                 
-                <Grid.Column only = {"computer"} width = {1}/>
+                <Grid.Column only = {"tablet mobile"} width = {1}/>
                 <Grid.Column only = {"tablet mobile"} width = {14}>
                     <iframe className = "resumeIframe" src = "/Arun_Ajay_Resume.pdf"/>
                 </Grid.Column>
                 
-                <Grid.Column only = {"computer"} width = {1}/>
+                <Grid.Column only = {"tablet mobile"} width = {1}/>
             </Grid.Row>
             <Footer></Footer>
         </Grid>
