@@ -31,7 +31,7 @@ export default class SiteHeader extends Component {
                 type: "navigation",
                 value:"Resume",
                 display: "Resume",
-                link: "/Resume"
+                link: "/resume"
             }
             ],
         activeItem: window.location.pathname
