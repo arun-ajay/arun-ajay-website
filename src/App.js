@@ -5,7 +5,7 @@ import {Route,Router, Redirect} from 'react-router-dom';
 import history from './history';
 import Projects from './pages/Projects/Projects';
 import Experiences from './pages/Experiences/Experiences';
-
+import Resume from './pages/Resume/Resume'
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path = "/" component = {LandingPage} exact/>
         <Route path = "/projects" component = {Projects} exact/>
         <Route path = "/experiences" component = {Experiences} exact/>
+        <Route path = "/resume" component = {Resume} exact/>
         <Redirect to = "/"/>
       </Router>
     </div>
