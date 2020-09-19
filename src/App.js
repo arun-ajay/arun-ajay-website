@@ -16,7 +16,7 @@ function App() {
           <Route path = "/experiences" component = {Experiences} exact/>
           <Route path = "/resume" component = {Resume} exact/>
           <Route path = "/" component = {LandingPage} exact/>
-          <Redirect to = "/"/>
+          <Redirect from = "/*" to = "/"/>
         </Switch>
       </Router>
     </div>

@@ -127,7 +127,7 @@ export default class LandingPage extends Component {
                             visible = {this.state.open}
                         >  
                             <Header as = 'h3' className = "titleHeader">
-                                Aspiring Software Engineer
+                                Aspiring Software Developer
                             </Header>
                         </Transition>
                         
