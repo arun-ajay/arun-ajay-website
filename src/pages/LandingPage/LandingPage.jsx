@@ -39,7 +39,7 @@ export default class LandingPage extends Component {
             {
                 icon: <Icon size = {"huge"} name = "instagram" style = {{"color":"black"}}/>,
                 background: "white",
-                url: "https://www.instagram.com/ajayruns/"
+                url: "https://www.instagram.com/arunajay.95/"
             },
             {
                 icon: <Icon size = {"huge"} name = "github alternate" style = {{"color":"black"}}/>,
