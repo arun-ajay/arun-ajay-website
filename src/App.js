@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path = "/projects" component = {Projects} exact/>
           <Route path = "/experiences" component = {Experiences} exact/>
-          <Route path = "/resume" component = {Resume} exact/>
+          {/* <Route path = "/resume" component = {Resume} exact/> */}
           <Route path = "/" component = {LandingPage} exact/>
           <Redirect from = "/*" to = "/"/>
         </Switch>
